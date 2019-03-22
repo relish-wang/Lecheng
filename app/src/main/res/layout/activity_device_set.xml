@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4" >
+
+    <com.lechange.demo.common.CommonTitle
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:id="@+id/movePlan"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/alarmmessage_plan"
+            android:textColor="#505166"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/switchPlan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/btn_moveplan_switch"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cloudMeal"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/movePlan"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:visibility="gone"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cloudNotice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/cloud_storage"
+            android:textColor="#505166"
+            android:textSize="20sp" />
+
+        <ToggleButton
+            android:id="@+id/cloudMealBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:button="@drawable/btn_moveplan_switch"
+            android:checked="false"
+            android:textOff=""
+            android:textOn=""
+            android:visibility="invisible" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/devicepwd"
+        android:layout_width="match_parent"
+        android:layout_below="@id/cloudMeal"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/device_pwd"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/device_pwd"
+            android:textColor="#505166"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/modify_device_pwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="15dp"
+            android:background="@android:color/transparent"
+            android:text="@string/device_modify_pwd" 
+            android:textColor="#505166"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/cloudUpgrade"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/devicepwd"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/cloudUpgradeTv"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="@string/cloud_upgrade"
+            android:textColor="#505166"
+            android:textSize="20sp" />
+
+        <FrameLayout
+            android:id="@+id/device_upgrade"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="25dp"
+            android:visibility="visible" >
+
+            <View
+                android:id="@+id/device_upgrade_bg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="#24b66c" />
+
+            <TextView
+                android:id="@+id/device_upgrade_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_btn_download"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="@string/upgrade"
+                android:textColor="#505166"
+                android:textSize="14sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4" >
+
+    <com.lechange.demo.common.CommonTitle
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_margin="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:hint="@string/enter_your_phone"
+        android:textColor="#505166"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/adminNotice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:drawableStart="@drawable/common_icon_remind"
+        android:textColor="#fd3a3c"
+        android:visibility="invisible" />
+
+    <Button
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/adminNotice"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="#4ea7f2"
+        android:text="@string/enter_device_list"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

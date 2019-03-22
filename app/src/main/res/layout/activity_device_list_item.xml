@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="251dp"
+    android:orientation="vertical"
+    android:background="@color/lc_bg_color">
+
+    <!-- 边框线 -->
+    <View 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="10dp" 
+        android:background="#d9d9d9"/>
+    
+    <!-- 通道名称和删除 -->
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="5dp"
+        android:background="#ffffff">
+        
+        <TextView
+	        android:id="@+id/list_channel_name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:textSize="14sp"
+	        android:textColor="#9f9fa6"/>
+   
+        <ImageView 
+            android:id="@+id/list_device_delete"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/list_btn_deletedevice"/>
+	    
+    </RelativeLayout>
+    
+    <!-- 展示 -->
+    <RelativeLayout 
+        android:id="@+id/list_bg_device"
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        
+        <!-- 底层功能键 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="5dp"
+        	android:paddingRight="5dp"
+            android:orientation="horizontal"
+            android:background="#50000000">      
+            <ImageView
+                android:id="@+id/list_device_livevideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/list_btn_livevideo"/>
+            <ImageView
+                android:id="@+id/list_device_localvideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/list_btn_localvideo"/>
+            <ImageView
+                android:id="@+id/list_device_cloudvideo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/list_btn_cloudvideo"/>
+            <ImageView
+                android:id="@+id/list_device_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/list_btn_message"/>
+            <ImageView
+                android:id="@+id/list_device_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/list_btn_setting"/>
+        </LinearLayout>
+        
+        <!-- 遮罩 -->
+        <LinearLayout
+            android:id="@+id/list_shade"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#65000000"
+            android:gravity="center"
+            android:visibility="gone">
+           <ImageView 
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:src="@drawable/list_icon_offline"/>
+        </LinearLayout>
+    </RelativeLayout>
+    
+</LinearLayout>

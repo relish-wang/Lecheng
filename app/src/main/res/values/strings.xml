@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- common -->
+    <string name="app_name">AndroidOpenDemo</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- 登陆模块 -->
+    <string name="admin_login_name">管理员模拟登陆</string>
+    <string name="user_login_name">用户模拟登陆</string>
+    <string name="login_error_notice">提示：当前demo中未正确配置appId和appSecret,请登录开放平台门户站点，创建应用（应用创建后会得到App ID 和 App Secret）,并且根据开发中心->开发指南中的提示，在demo的源码中的相应代码中填写appId和appSecret,设置后再次编译此demo,进行真机调试.</string>  
+    <string name="common_loading">努力加载中</string>
+	<string name="bind_user_notice">验证码短信已发送至手机</string>
+	<string name="bind_user_err">验证码短信发送失败</string>
+    <string name="user_no_input">请输入有效的手机号码</string>
+    <string name="user_bind">用户绑定</string>
+    <string name="user_bind_err">该手机号已绑定此应用,请点击“进入设备列表”进行设备管理</string>
+    <string name="user_nobind_err">当前手机号码未与您的应用绑定，请点击“用户绑定”按钮进行用户绑定操作</string>
+	<!-- 设备列表模块 -->
+	<string name="devices_name">设备列表</string>
+	<string name="devices_operation_name">设备操作</string>
+	<string name="devices_add_name">设备添加</string>
+	<string name="wifi_config_loading">无线配网中</string>
+	<string name="devices_delete_dialog_title">警告</string>	
+	<string name="devices_delete_dialog_message">确定要删除吗？</string>
+	<string name="devices_no_shared_device">没有分享设备</string>
+	<string name="devices_no_authorized_device">没有授权设备</string>
+	
+	<!-- 设备配对对话框 -->
+	<string name="devices_config_dialog_title">提示</string>	
+	<string name="devices_config_dialog_message">根据说明书操作设备的配对按钮,再点击确认进入配对</string>
+	
+	<!-- 录像列表模块 -->
+	<string name="local_records_name">本地录像</string>	
+	<string name="cloud_records_name">云存储录像</string>	
+	
+	<!-- 报警消息列表 -->
+	<string name="alarm_message_name">报警消息列表</string>	
+	<string name="alarm_message_delete_dialog_title">警告</string>	
+	<string name="alarm_message_delete_dialog_message">确定要删除吗？</string>
+
+	<string name="alarm_message_keyinput_dialog_title">"请输入秘钥"</string>	
+
+	
+    <!-- 摄像头播放模块 -->
+    <string name="live_play_name">实时预览</string>
+    <string name="record_play_name">录像播放</string>
+    <string name="video_flow_count">流量：</string>
+    <string name="video_flow_speed">码率：</string>
+    <string name="video_flow_unit_M">M</string>
+    <string name="video_flow_unit_K_By_S">K/S</string>
+    <string name="video_default_time">00:00:00</string>
+    <string name="video_monitor_online_fail_restart">网络断开，请检查网络</string>
+    <string name="video_monitor_online_restart"></string>
+    <string name="video_monitor_unsupport_audio_talk">该设备不支持语音对讲功能</string>
+    <string name="video_monitor_media_talk">开始对讲</string>
+    <string name="video_monitor_media_talk_close">对讲关闭</string>
+    <string name="video_monitor_load_talk_sound_error">缓冲或对讲中，无法开启声音</string>
+    <string name="video_monitor_sound_open">声音打开</string>
+    <string name="video_monitor_sound_close">声音关闭</string>
+    <string name="video_monitor_image_capture_success">截图成功</string>
+    <string name="video_monitor_image_capture_failed">截图失败</string>
+    <string name="video_monitor_video_record_success">录制成功</string>
+    <string name="video_monitor_video_record_failed">录制失败</string>
+    <string name="video_monitor_media_record">开始录制</string>
+    <string name="video_monitor_media_talk_ready">对讲已准备好</string>
+    <string name="video_monitor_talk_open_error">对讲打开失败</string>
+    <string name="video_monitor_play_error">画面打开失败,请检查网络或秘钥后重试</string>
+    <string name="video_monitor_seek_error">画面定位失败</string>
+    <string name="video_monitor_data_cache">数据缓冲中</string>
+    <string name="video_monitor_record_play_error">录像播放失败</string>
+    <string name="video_monitor_change_stream_normal">正在切换成"流畅"模式</string>
+    <string name="video_monitor_change_stream_hd">正在切换成"高清"模式</string>
+    <string name="beg_hour_data_remind">开始时间-小时：</string>
+    <string name="no_access_write_external_storage">没有权限读写sd卡，抓图，录制无法使用</string>
+	 <string name="enter_sms_code">请输入验证码</string>
+    <string name="get_sms_code">获取验证码</string>
+    <string name="sms_to_phone">验证码短信已发送至手机</string>
+    <string name="bind_phone">绑定</string>
+    <string name="enter_your_phone">请输入您的管理员账号</string>
+    <string name="enter_valid_phone">请输入有效的手机号码</string>
+    <string name="enter_device_list">进入设备列表</string>
+    <string name="alarm_message_time">报警时间</string>
+    <string name="enter_device_code">请输入设备序列号</string>
+    <string name="wifi_ssid">WIFI网络SSID:</string>
+    <string name="wifi_password">请输入wifi密码</string>
+    <string name="alarmmessage_plan">动检计划</string>
+    <string name="download">下载</string>
+    <string name="cloud_storage">云存储</string>
+    <string name="cloud_upgrade">云升级</string>
+    <string name="upgrade">升级</string>
+    <string name="cancel">取消</string>
+    <string name="select_day">请选择查询日期</string>
+    <string name="query">查询</string>
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="day">日</string>
+    <string name="device_pwd">设备密码</string>
+    <string name="device_modify_pwd">修改</string>
+    
+    <!-- 对话框 -->
+	<string name="dialog_positive">确定</string>
+	<string name="dialog_nagative">取消</string>
+	
+	<!-- Toast -->
+	<string name="toast_userbind_no_idcode">验证码不能为空</string>
+	
+	<string name="toast_cloudupdate_success">云升级成功</string>
+	<string name="toast_cloudupdate_failed">云升级失败</string>
+	<string name="toast_alarmplan_modifyalarmstatus_success">修改动检计划成功</string>
+	<string name="toast_alarmplan_modifyalarmstatus_failed">修改动检计划失败</string>
+	<string name="toast_storagestrategy_update_success">云套餐更改成功</string>
+	<string name="toast_storagestrategy_update_failed">云套餐更改失败</string>
+	
+	<string name="toast_alarmmsg_query_failed">查询报警消息失败，错误码：</string>
+	<string name="toast_alarmmsg_delete_failed">删除报警消息失败</string>
+	<string name="toast_alarmmsg_load_failed">加载失败</string>
+	
+	<string name="toast_device_no_devices">没有设备</string>
+	<string name="toast_device_list">获取设备列表失败</string>
+	<string name="toast_device_delete_success">删除成功</string>
+	<string name="toast_device_ability_no_ptz">设备不具备云台能力级</string>
+	<string name="toast_device_not_exist">设备不存在</string>
+	<string name="toast_device_get_init_info_failed">获取初始状态信息失败</string>
+	
+	<string name="toast_adddevice_no_sn_or_psw">序列号/密码不能为空！</string>
+	<string name="toast_adddevice_no_sn">序列号不能为空！</string>
+	<string name="toast_adddevice_already_binded_by_self">已经被自己绑定</string>
+	<string name="toast_adddevice_already_binded_by_others">已经被他人绑定</string>
+	<string name="toast_adddevice_config_timeout">超时配置失败</string>
+	<string name="toast_adddevice_input_device_key">请输入设备密码</string>
+	<string name="toast_adddevice_input_device_safecode">请输入设备背面标签页中的安全码，注：若没有安全码则填空</string>
+	<string name="toast_adddevice_input_device_key_after_init">请输入设备初始化后的设备密码</string>
+	<string name="toast_adddevice_input_device_key_to_init">请输入新的密码进行初始化</string>
+	
+	<string name="toast_permission_location_forbidden">位置服务已被禁止，请在《权限管理》打开</string>
+	
+	<string name="toast_playback_no_records">设备/录像不存在</string>
+	<string name="toast_playback_no_iframe">发现不了I帧</string>
+	
+	<string name="toast_recordlist_download_failed">下载失败/秘钥错误</string>
+	<string name="toast_recordlist_download_end">下载结束</string>
+	<string name="toast_recordlist_onlyone">目前仅支持一个播放/任务下载</string>
+	<string name="toast_recordlist_query_failed">查询录像失败，错误码: </string>
+	
+	<string name="toast_errorcode">错误码</string>
+	<string name="toast_errorcode_business">业务错误码</string>
+	<string name="toast_errorcode_http">HTTP错误码</string>
+	<string name="toast_errorcode_inner">内部错误码</string>
+	<string name="toast_errormsg">错误消息</string>
+	<string name="new_password">新密码</string>
+	<string name="old_password">旧密码</string>
+</resources>
+<!-- <string name="video_flow_space_3">&#160;&#160;&#160;</string> -->

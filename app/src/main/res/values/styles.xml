@@ -1,0 +1,17 @@
+<resources>
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:windowNoTitle">true</item> <!-- 设置没有标题 -->           
+        <!-- 设置activity切换动画 --> 
+        <item name="android:windowAnimationStyle">@style/activityAnimation</item>
+    </style>
+
+    <!-- animation 样式 -->
+    <style name="activityAnimation" parent="@android:style/Animation">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+ 		<item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+		<item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+		<item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>      
+    </style>
+</resources>

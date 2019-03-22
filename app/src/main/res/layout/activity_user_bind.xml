@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4" >
+
+    <com.lechange.demo.common.CommonTitle
+        android:id="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <LinearLayout
+        android:id="@+id/authCode"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/authCodeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="@string/enter_sms_code"
+            android:textColor="#505166"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/getAuthCode"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="@string/get_sms_code"
+            android:textColor="#0074ff"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/authCodeNotice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/authCode"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sms_to_phone"
+        android:textColor="#9f9fa6" 
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/bind"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/authCodeNotice"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="50dp"
+        android:background="#8ab9e1"
+        android:text="@string/bind_phone"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- common -->
+    <string name="app_name">AndroidOpenDemo</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- 登陆模块 -->
+    <string name="admin_login_name">admin login</string>
+    <string name="user_login_name">user login</string>
+    <string name="login_error_notice">please enter appid and appsecret!note: the developers can get appid and appsecret by browsing the website.</string>
+    <string name="common_loading">loading</string>
+    <string name="bind_user_notice">SMS has been sent to the phone</string>
+    <string name="bind_user_err">SMS sent failed</string>
+    <string name="user_no_input">please enter a valid phone number</string>
+    <string name="user_bind">user bind</string>
+    <string name="user_bind_err">The phone number has been bound to this application.please click device list</string>
+    <string name="user_nobind_err">The phone number has not been bound to the application.please bind first!</string>
+    <!-- 设备列表模块 -->
+    <string name="devices_name">device list</string>
+    <string name="devices_operation_name">device operation</string>
+    <string name="devices_add_name">device add</string>
+    <string name="wifi_config_loading">wifi config......</string>
+    <string name="devices_delete_dialog_title">Warning</string>	
+	<string name="devices_delete_dialog_message">Delete this device?</string>
+	<string name="devices_no_shared_device">No shared device</string>
+	<string name="devices_no_authorized_device">No authorized device</string>
+
+	<!-- 设备配对对话框 -->
+	<string name="devices_config_dialog_title">"Notice"</string>	
+	<string name="devices_config_dialog_message">Click OK to config referring the device guide</string>
+	
+    <!-- 录像列表模块 -->
+    <string name="local_records_name">local video</string>
+    <string name="cloud_records_name">cloud video</string>
+
+    <!-- 报警消息列表 -->
+    <string name="alarm_message_name">alarm message list</string>
+    <string name="alarm_message_delete_dialog_title">Warning</string>	
+	<string name="alarm_message_delete_dialog_message">Delete this message?</string>
+	<string name="alarm_message_keyinput_dialog_title">Input key</string>	
+
+    <!-- 摄像头播放模块 -->
+    <string name="live_play_name">play live video</string>
+    <string name="record_play_name">play record video </string>
+    <string name="video_flow_count">flow</string>
+    <string name="video_flow_speed">bit rate</string>
+    <string name="video_flow_unit_M">M</string>
+    <string name="video_flow_unit_K_By_S">K/S</string>
+    <string name="video_default_time">00:00:00</string>
+    <string name="video_monitor_online_fail_restart">disconnected from the network,please check it</string>
+    <string name="video_monitor_online_restart"></string>
+    <string name="video_monitor_unsupport_audio_talk">the device does not support talking</string>
+    <string name="video_monitor_media_talk">start talking</string>
+    <string name="video_monitor_media_talk_close">close talking</string>
+    <string name="video_monitor_load_talk_sound_error">loading or talking,sound could not open</string>
+    <string name="video_monitor_sound_open">sound open</string>
+    <string name="video_monitor_sound_close">sound close</string>
+    <string name="video_monitor_image_capture_success">screenshot success</string>
+    <string name="video_monitor_image_capture_failed">screenshot failed</string>
+    <string name="video_monitor_video_record_success">record successed</string>
+    <string name="video_monitor_video_record_failed">record failed</string>
+    <string name="video_monitor_media_record">start recording</string>
+    <string name="video_monitor_media_talk_ready">ready to talk</string>
+    <string name="video_monitor_talk_open_error">open talking failed</string>
+    <string name="video_monitor_play_error">play failed!please check network and try !</string>
+    <string name="video_monitor_seek_error">seek failed</string>
+    <string name="video_monitor_data_cache">data loading</string>
+    <string name="video_monitor_record_play_error">play video failed</string>
+    <string name="video_monitor_change_stream_normal">switch to SD</string>
+    <string name="video_monitor_change_stream_hd">switch to HD </string>
+    <string name="beg_hour_data_remind">startTime-hour:</string>
+    <string name="no_access_write_external_storage">No permission to write sd card! recording and capturing could not be used</string>
+    <string name="enter_sms_code">please input sms code</string>
+    <string name="get_sms_code">get sms code</string>
+    <string name="sms_to_phone">sms code has been sent to phone</string>
+    <string name="bind_phone">bind</string>
+    <string name="enter_your_phone">please input your phone number</string>
+    <string name="enter_valid_phone">please a valid phone number</string>
+    <string name="enter_device_list">enter device list</string>
+    <string name="alarm_message_time">alarm time</string>
+    <string name="enter_device_code">please input device code</string>
+    <string name="wifi_ssid">wifi ssid:</string>
+    <string name="wifi_password">wifi password</string>
+    <string name="alarmmessage_plan">alarm plan</string>
+    <string name="download">download</string>
+    <string name="cloud_storage">cloud storage</string>
+    <string name="cloud_upgrade">cloud upgrade</string>
+    <string name="upgrade">upgrade</string>
+    <string name="cancel">cancel</string>
+    <string name="select_day">please select day</string>
+    <string name="query">query</string>
+    <string name="year">year</string>
+    <string name="month">month</string>
+    <string name="day">day</string>
+    <string name="device_pwd">Device Password</string>
+    <string name="device_modify_pwd">modify</string>
+    
+    <!-- 对话框 -->
+	<string name="dialog_positive">OK</string>
+	<string name="dialog_nagative">Cancel</string>
+	
+	<!-- Toast -->
+	<string name="toast_userbind_no_idcode">sms code can not be empty</string>
+	
+	<string name="toast_cloudupdate_success">cloud update success</string>
+	<string name="toast_cloudupdate_failed">cloud update failed</string>
+	<string name="toast_alarmplan_modifyalarmstatus_success">modify alarm plan success</string>
+	<string name="toast_alarmplan_modifyalarmstatus_failed">modify alarm plan failed</string>
+	<string name="toast_storagestrategy_update_success">storage strategy update success</string>
+	<string name="toast_storagestrategy_update_failed">storage strategy update failed</string>
+	
+	<string name="toast_alarmmsg_query_failed">query alarm message failed, errorcode: </string>
+	<string name="toast_alarmmsg_delete_failed">delete alarm message failed</string>
+	<string name="toast_alarmmsg_load_failed">load failed</string>
+	
+	<string name="toast_device_no_devices">no device</string>
+	<string name="toast_device_list">query device list failed</string>
+	<string name="toast_device_delete_success">delete success</string>
+	<string name="toast_device_ability_no_ptz">this device has no ptz ability</string>
+	<string name="toast_device_not_exist">device not exist</string>
+	<string name="toast_device_get_init_info_failed">get initialize info failed</string>
+	
+	<string name="toast_adddevice_no_sn_or_psw">SN/Password can not be empty!</string>
+	<string name="toast_adddevice_no_sn">SN can not be empty!</string>
+	<string name="toast_adddevice_already_binded_by_self">already binded by yourself</string>
+	<string name="toast_adddevice_already_binded_by_others">already binded by others</string>
+	<string name="toast_adddevice_config_timeout">config timeout</string>
+	<string name="toast_adddevice_input_device_key">Input device key</string>
+	<string name="toast_adddevice_input_device_safecode">Input safe code</string>
+	<string name="toast_adddevice_input_device_key_after_init">Please Input Device Key</string>
+	<string name="toast_adddevice_input_device_key_to_init">Please Input Device Init Key</string>
+	
+	<string name="toast_permission_location_forbidden">location service has been forbidden, go to permisson manager to open</string>
+	
+	<string name="toast_playback_no_records">device/record not exist</string>
+	<string name="toast_playback_no_iframe">no I frame</string>
+	
+	<string name="toast_recordlist_download_failed">download failed/error key</string>
+	<string name="toast_recordlist_download_end">download end</string>
+	<string name="toast_recordlist_onlyone">only play/download one by one</string>
+	<string name="toast_recordlist_query_failed">query record failed, errorcode: </string>
+	
+	<string name="toast_errorcode">errorcode</string>
+	<string name="toast_errorcode_business">business errorcode</string>
+	<string name="toast_errorcode_http">HTTP errorcode </string>
+	<string name="toast_errorcode_inner">inner errorcode</string>
+	<string name="toast_errormsg">error msg</string>
+    
+	<string name="new_password">new password</string>
+	<string name="old_password">old password</string>
+</resources>

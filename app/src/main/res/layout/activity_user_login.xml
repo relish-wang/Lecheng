@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#efeff4" >
+    	<com.lechange.demo.common.CommonTitle
+	   android:id="@id/title"
+	   android:layout_width="match_parent"
+	   android:layout_height="48dp" />
+
+    <LinearLayout
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/zoneView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:maxLength="4"
+            android:minWidth="40dp"
+            android:text="+86"
+            android:textColor="#505166"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/phoneEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:hint="@string/enter_your_phone"
+            android:numeric="integer"
+            android:maxLength="11"
+            android:textColor="#505166"
+            android:textSize="20dp" />
+        
+    </LinearLayout>
+    <TextView
+        android:id="@+id/notice"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:textColor="#fd3a3c"
+        android:layout_below="@+id/phone"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:drawableLeft="@drawable/common_icon_remind"
+        android:text="@string/enter_valid_phone"
+        android:visibility="invisible"/>
+
+    <Button
+        android:id="@+id/bindUser"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/phone"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="100dp"
+        android:background="#ffffff"
+        android:text="@string/user_bind"
+        android:textColor="#505156" />
+
+    <Button
+        android:id="@+id/deviceList"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/bindUser"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:background="#4ea7f2"
+        android:text="@string/enter_device_list"
+        android:textColor="#ffffff" />
+
+</RelativeLayout>

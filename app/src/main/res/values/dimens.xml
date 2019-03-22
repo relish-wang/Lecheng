@@ -1,0 +1,12 @@
+<resources>
+    
+    <!-- Title -->
+    <dimen name="common_divider_height">0.5dp</dimen>
+    
+    <!-- 文字 -->
+    <dimen name="text_size_mini">10sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+    <dimen name="text_size_mid">15sp</dimen>
+    <dimen name="text_size_large">20sp</dimen>
+    
+</resources>

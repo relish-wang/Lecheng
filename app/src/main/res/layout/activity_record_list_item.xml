@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="205dp"
+    android:orientation="vertical"
+    android:background="@color/lc_bg_color">
+    
+    <!-- 展示 -->
+    <RelativeLayout 
+        android:id="@+id/list_bg_video"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="5dp">
+        
+        <!-- 底层功能键 -->
+        <RelativeLayout 
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:orientation="horizontal"
+            android:background="#50000000"> 
+          	<TextView
+          	    android:id="@+id/list_record_time"
+          	    android:layout_width="wrap_content"
+          	    android:layout_height="wrap_content"
+          	    android:layout_centerVertical="true"
+          	    android:layout_alignParentLeft="true"
+          	    android:textColor="#ffffff"
+          	    android:textSize="13sp"/>
+          	<FrameLayout
+          	    android:id="@+id/list_record_download"
+          	    android:layout_width="wrap_content"
+		      	android:layout_height="25dp"
+		      	android:layout_centerVertical="true"
+		      	android:layout_alignParentRight="true"
+		      	android:visibility="invisible">
+		      	<View
+		      	    android:id="@+id/record_download_bg"
+		      	    android:layout_width="0dp"
+		      	    android:layout_height="match_parent"
+		      	    android:background="#24b66c"/>
+          	 	<TextView 
+			      	android:id="@+id/record_download_icon"
+			      	android:layout_width="wrap_content"
+		      		android:layout_height="match_parent"
+		      		android:gravity="center"
+		      		android:textColor="#ffffff"
+		      		android:textSize="14sp"
+		      		android:text="@string/download"
+			      	android:background="@drawable/list_btn_download"/>
+          	</FrameLayout>
+          	
+          	
+        </RelativeLayout>
+               
+    </RelativeLayout>
+    
+</LinearLayout>

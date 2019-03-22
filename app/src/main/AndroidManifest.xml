@@ -1,0 +1,68 @@
+<?xml version="1.1" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lechange.demo">
+
+    <!-- Required  一些系统要求的权限，如访问网络等 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/sdk_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name="com.lechange.demo.login.SplashActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.lechange.demo.login.UserLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lechange.demo.login.AdminLoginActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lechange.demo.login.BindUserActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lechange.demo.listview.DevicelistActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lechange.demo.manager.DeviceSetActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lechange.demo.mediaplay.MediaPlayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lechange.demo.manager.DeviceAddActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lechange.demo.message.AlarmMessageActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.lechange.demo.listview.RecordListActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

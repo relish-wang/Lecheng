@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#fffafa"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:text="@string/cancel"
+            android:textColor="#505166" />
+
+        <TextView
+            android:id="@+id/notice"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#505166"
+            android:text="@string/select_day" />
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:textColor="#1e90ff"
+            android:text="@string/query" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.lechange.demo.common.datepicker.WheelVerticalView
+                android:id="@+id/year_wheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                wheel:isAllVisible="false"
+                wheel:visibleItems="3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:textColor="#3b3b3b"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.lechange.demo.common.datepicker.WheelVerticalView
+                android:id="@+id/month_wheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                wheel:isAllVisible="false"
+                wheel:visibleItems="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/month"
+                 android:textColor="#3b3b3b"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.lechange.demo.common.datepicker.WheelVerticalView
+                android:id="@+id/day_wheel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                wheel:isAllVisible="false"
+                wheel:visibleItems="5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/day"
+                 android:textColor="#3b3b3b"
+                android:textSize="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

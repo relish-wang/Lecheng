@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#efeff4">
+
+    <com.lechange.demo.common.CommonTitle
+        android:id="@id/title"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"/>
+
+    <EditText
+        android:id="@+id/deviceSN"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/title"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:hint="@string/enter_device_code"
+        android:paddingLeft="10dp"
+        android:textColor="#c3c3c8"/>
+
+    <TextView
+        android:id="@+id/wifiName"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@id/deviceSN"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/wifi_ssid"
+        android:textColor="#9f9fa6"
+        />
+
+    <EditText
+        android:id="@+id/wifiPasswd"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/wifiName"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:hint="@string/wifi_password"
+        android:paddingLeft="10dp"
+        android:textColor="#c3c3c8"/>
+
+    <!-- 缓冲加载提示 -->
+    <com.lechange.demo.common.ProgressDialog
+        android:id="@+id/query_load"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:id="@+id/wifiButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/wifiPasswd"
+        android:layout_marginTop="125dp">
+
+        <ImageView
+            android:id="@+id/wirelessAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/device_icon_wifiadd"/>
+
+        <ImageView
+            android:id="@+id/wiredAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/device_btn_wiredadd"/>"
+    </LinearLayout>
+
+</RelativeLayout>

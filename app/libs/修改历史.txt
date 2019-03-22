@@ -1,0 +1,13 @@
+2015/5/21
+修改点如下：
+1）更新语音对讲的回声消除库及相关接口适配
+2）解决播放组件内存不释放问题
+3）Android版本启动网络框架线程，解决预览时崩溃问题
+4）减少无用的动态库（adpcmdec， amrdec， mp2dec， mp3dec， oggdec）
+   注意：在App代码中如果有加载这些库，需要去除。
+
+2015/6/25
+修改点如下：
+1）替换WindowComponent.jar包和PlayerComponent.so库
+   解决退出播放器易崩溃问题（listener指针不释放）
+2) 语音对讲的Jar更新.语音对讲接口更新 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lc_bg_color">
+    
+	<com.lechange.demo.common.CommonTitle
+	   android:id="@id/title"
+	   android:layout_width="match_parent"
+	   android:layout_height="48dp" />
+	
+	<!-- 缓冲加载提示 -->
+    <com.lechange.demo.common.ProgressDialog
+       android:id="@id/query_load"
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:gravity="center"
+       android:textColor="#000000"
+       android:visibility="gone"/>
+
+    <ImageView 
+      android:id="@+id/list_records_novideo"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:layout_gravity="center"
+      android:src="@drawable/list_bg_norecord"
+      android:visibility="gone"/>
+    
+	<ListView
+       android:id="@+id/list_records"
+       android:layout_weight="1"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
+	</ListView>
+ 
+	<LinearLayout
+	    android:id="@id/timerContainer"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal">
+    </LinearLayout>
+    
+</LinearLayout>

@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/preview_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/lc_bg_color" >
+   
+   <!-- 播放窗口容器 -->
+   <FrameLayout
+       android:id="@+id/record_window"
+       android:layout_width="match_parent"
+       android:layout_height="200dp"
+       android:layout_marginTop="10dp">
+       <!-- 渲染内容 -->
+       <FrameLayout
+           android:id="@+id/record_window_content"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@color/lc_media_color"/>
+       <LinearLayout
+           android:id="@+id/record_menu"
+           android:layout_width="match_parent"
+           android:layout_height="30dp"
+           android:layout_gravity="bottom"
+           android:paddingLeft="10dp"
+           android:paddingRight="10dp"
+           android:background="#50000000"
+           android:visibility="visible"
+           android:orientation="horizontal">
+           
+           <ImageView
+                android:id="@+id/record_play_pause"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/record_btn_play"/>
+           
+           <TextView
+                android:id="@+id/record_startTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/video_default_time"
+                android:textSize="12sp"
+                android:textColor="#ffffffff" />
+           
+           <com.lechange.demo.common.RecoderSeekBar
+                android:id="@+id/record_seekbar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:paddingTop="1dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:maxHeight="1dip"
+                android:minHeight="1dip"             
+                android:thumb="@drawable/record_progress_point" />
+           
+           <TextView
+                android:id="@+id/record_endTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:text="@string/video_default_time"
+                android:textColor="#ffffffff" />
+           
+           <ImageView
+                android:id="@+id/record_scale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/record_btn_fullscreen"/>          
+       </LinearLayout>
+       
+       <!-- 播放加载提示 -->
+       <com.lechange.demo.common.ProgressDialog
+            android:id="@+id/record_play_load"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#FFFFFF" 
+            android:visibility="gone"/>
+        
+	   <!-- 播放复位按钮 -->
+       <TextView
+            android:id="@+id/record_play_pressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textColor="#8b8c94"
+            android:drawableTop="@drawable/video_btn_play"
+            android:visibility="gone"/>
+       
+   </FrameLayout>      
+
+
+</LinearLayout>
